@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu empréstimo | Upfour</title>
 
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/emprestimo.css" type="text/css">
+
     <script src="https://kit.fontawesome.com/eeb7275b0d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +20,7 @@
                 <img src="/img/logo.png" alt="logo upFour">
             </div>
 
-            <nav>
+            <nav id="menu">
                 <ul>
                     <li>
                         <a href="home.html">
@@ -25,12 +28,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="home.html">
+                        <a href="sobre.html">
                             A upFour
                         </a>
                     </li>
                     <li>
-                        <a href="home.html">
+                        <a href="emprestimo.html">
                             Peça o seu empréstimo
                         </a>
                     </li>
@@ -44,58 +47,69 @@
         </header>
 
         <main>
-            <section id="valores">
+            <div id="tituloPrincipal">
                 <h1>
                     Faça uma simulação de empréstimo
                 </h1>
+            </div>
 
+            <section id="valores">
                 <div id="opcoes">
                     <form action="#">
-                        <label for="valor">
-                            Quanto você precisa?
-                        </label>
-                        <input type="range" name="valor" id="valor">
 
-                        <label for="valor">
-                            Quanto você precisa?
-                        </label>
-                        <input type="range" name="valor" id="valor">
+                        <div class="grupoValores">
+                            <label for="">
+                                Quanto você precisa?
+                                <p>R$ 15.000</p>
+                            </label>
+                            <input type="range" name="valor">
+                        </div>
 
-                        <label for="opcao">
-                            Qual a finalidade?
-                        </label>
-                        <select name="opcao" id="opcao">
-                            <option value="selecionar">
-                                Selecionar
-                            </option>
-                            <option value="dividas">
-                                Refinanciar dívidas
-                            </option>
-                            <option value="investir">
-                                Investir em negócios
-                            </option>
-                            <option value="reforma">
-                                Fazer uma reforma
-                            </option>
-                            <option value="cartao">
-                                Pagar cartão
-                            </option>
-                            <option value="carro">
-                                Comprar um carro
-                            </option>
-                            <option value="casamento">
-                                Casamento
-                            </option>
-                            <opttion value="compra">
-                                Fazer uma compra
-                            </opttion>
-                            <opttion value="ferias">
-                                Tirar férias
-                            </opttion>
-                            <opttion value="mudanca">
-                                Fazer mudança
-                            </opttion>
-                        </select>
+                        <div class="grupoValores">
+                            <label for="">
+                                Em quantas parcelas?
+                            </label>
+                            <p>24 parcelas</p>
+                            <input type="range" name="valor">
+                        </div>
+
+                        <div class="grupoValores">
+                            <label for="">
+                                Qual a finalidade?
+                            </label>
+                            <select name="opcao" id="opcao">
+                                <option value="selecionar">
+                                    Selecionar
+                                </option>
+                                <option value="dividas">
+                                    Refinanciar dívidas
+                                </option>
+                                <option value="investir">
+                                    Investir em negócios
+                                </option>
+                                <option value="reforma">
+                                    Fazer uma reforma
+                                </option>
+                                <option value="cartao">
+                                    Pagar cartão
+                                </option>
+                                <option value="carro">
+                                    Comprar um carro
+                                </option>
+                                <option value="casamento">
+                                    Casamento
+                                </option>
+                                <opttion value="compra">
+                                    Fazer uma compra
+                                </opttion>
+                                <opttion value="ferias">
+                                    Tirar férias
+                                </opttion>
+                                <opttion value="mudanca">
+                                    Fazer mudança
+                                </opttion>
+                            </select>
+                        </div>
                     </form>
                 </div>
             </section>

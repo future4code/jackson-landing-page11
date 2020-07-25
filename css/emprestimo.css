@@ -1,0 +1,123 @@
+#tituloPrincipal {
+    width: 100%;
+    height: 190px;
+    line-height: 120px;
+
+    background-color: #d2c2b0;
+
+    color: #FFFFFF;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+
+    position: relative;
+}
+
+#valores {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 60px;
+}
+
+#valores #opcoes {
+    width: 90%;
+}
+
+#opcoes form {
+    width: 100%;
+    height: 200px;
+    line-height: 56px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#opcoes form .grupoValores {
+    width: 100%;
+    height: 100%;
+}
+
+#opcoes .grupoValores label {
+    font-size: .8em;
+}
+
+#opcoes .grupoValores p {
+    font-weight: bold;
+    color: #1F1F24;
+    font-size: 1.7em;
+
+}
+
+#opcoes form .grupoValores input[type=range] {
+    width: 100%;
+}
+
+#opcoes form .grupoValores:nth-child(3) {
+    width: 90%;
+    height: 100%;
+    
+    display: flex;
+    gap: 3.65em;
+    flex-direction: column;
+}
+
+#opcoes form .grupoValores:nth-child(3) select {
+    border: none;
+    border-bottom: 1px solid #1F1F24;
+    outline: none;
+
+    color: #1F1F24;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+#taxas {
+    width: 70%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#taxas #pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+#taxas #pagamento {
+    text-align: right;
+}
+
+#taxas #pagamento li:nth-child(3) {
+    width: 99%;
+}
+
+#taxas #perfis {
+    width: 50%;
+    height: 110%;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 3;
+    position: relative;
+
+    background-color: #1F1F24;
+    border: 1px solid #d2c2b0;
+    border-radius: 10px;
+}
