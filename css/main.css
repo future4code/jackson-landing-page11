@@ -1,0 +1,112 @@
+/* reset espaçamento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* reset tag a */
+
+a {
+    text-decoration: none;
+}
+
+/* reset tag li */
+
+li {
+    list-style: none;
+}
+
+    /* Configurações gerais */
+
+
+/* font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+/* body */
+
+body {
+    max-width: 1280px;
+    width: 100%;
+    overflow-x: hidden;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* header */
+
+header {
+    width: 100vw;
+    height: 140px;    
+    border-bottom: 2px solid #d2c2b0;
+
+    background-color: #1F1F24;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+/* logo */
+
+#logo {
+    width: 140px;
+    height: 120px;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* navbar / menu */
+
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+
+    width: 600px;
+}
+
+#menu ul li a {
+    font-size: 1.2em;
+    color: #d2c2b0;
+    font-weight: bold;
+}
+
+/* botão header */
+
+header button {
+    width: 120px;
+    height: 50px;
+
+    font-weight: bold;
+    color: #1F1F24;
+
+    border-radius: 8px;
+    border: 2px solid #d2c2b0;
+    cursor: pointer;
+}
+
+/* efeito hover botão header */
+
+header button:hover {
+    background-color: #1F1F24;
+    color: #d2c2b0;
+}
+
+/* main */
+
+main {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #1F1F24;
+}

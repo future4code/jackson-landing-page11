@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu empréstimo | Upfour</title>
 
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/emprestimo.css" type="text/css">
+
     <script src="https://kit.fontawesome.com/eeb7275b0d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +20,7 @@
                 <img src="/img/logo.png" alt="logo upFour">
             </div>
 
-            <nav>
+            <nav id="menu">
                 <ul>
                     <li>
                         <a href="home.html">
@@ -25,12 +28,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="home.html">
+                        <a href="sobre.html">
                             A upFour
                         </a>
                     </li>
                     <li>
-                        <a href="home.html">
+                        <a href="emprestimo.html">
                             Peça o seu empréstimo
                         </a>
                     </li>
@@ -44,58 +47,69 @@
         </header>
 
         <main>
-            <section id="valores">
+            <div id="tituloPrincipal">
                 <h1>
                     Faça uma simulação de empréstimo
                 </h1>
+            </div>
 
+            <section id="valores">
                 <div id="opcoes">
                     <form action="#">
-                        <label for="valor">
-                            Quanto você precisa?
-                        </label>
-                        <input type="range" name="valor" id="valor">
 
-                        <label for="valor">
-                            Quanto você precisa?
-                        </label>
-                        <input type="range" name="valor" id="valor">
+                        <div class="grupoValores">
+                            <label for="">
+                                Quanto você precisa?
+                                <p>R$ 15.000</p>
+                            </label>
+                            <input type="range" name="valor">
+                        </div>
 
-                        <label for="opcao">
-                            Qual a finalidade?
-                        </label>
-                        <select name="opcao" id="opcao">
-                            <option value="selecionar">
-                                Selecionar
-                            </option>
-                            <option value="dividas">
-                                Refinanciar dívidas
-                            </option>
-                            <option value="investir">
-                                Investir em negócios
-                            </option>
-                            <option value="reforma">
-                                Fazer uma reforma
-                            </option>
-                            <option value="cartao">
-                                Pagar cartão
-                            </option>
-                            <option value="carro">
-                                Comprar um carro
-                            </option>
-                            <option value="casamento">
-                                Casamento
-                            </option>
-                            <opttion value="compra">
-                                Fazer uma compra
-                            </opttion>
-                            <opttion value="ferias">
-                                Tirar férias
-                            </opttion>
-                            <opttion value="mudanca">
-                                Fazer mudança
-                            </opttion>
-                        </select>
+                        <div class="grupoValores">
+                            <label for="">
+                                Em quantas parcelas?
+                            </label>
+                            <p>24 parcelas</p>
+                            <input type="range" name="valor">
+                        </div>
+
+                        <div class="grupoValores">
+                            <label for="">
+                                Qual a finalidade?
+                            </label>
+                            <select name="opcao" id="opcao">
+                                <option value="selecionar">
+                                    Selecionar
+                                </option>
+                                <option value="dividas">
+                                    Refinanciar dívidas
+                                </option>
+                                <option value="investir">
+                                    Investir em negócios
+                                </option>
+                                <option value="reforma">
+                                    Fazer uma reforma
+                                </option>
+                                <option value="cartao">
+                                    Pagar cartão
+                                </option>
+                                <option value="carro">
+                                    Comprar um carro
+                                </option>
+                                <option value="casamento">
+                                    Casamento
+                                </option>
+                                <opttion value="compra">
+                                    Fazer uma compra
+                                </opttion>
+                                <opttion value="ferias">
+                                    Tirar férias
+                                </opttion>
+                                <opttion value="mudanca">
+                                    Fazer mudança
+                                </opttion>
+                            </select>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -114,50 +128,106 @@
                 </ul>
 
                 <div id="perfis">
-                    <ul class="perfilA">
-                        <li>
-                            Perfil de A-E
-                            *Limite: R$ 50.000,00 em até 36 Parcelas
-                        </li>
-                        <li>
-                            Entre
-                            2% e 5%
-                        </li>
-                        <li>
-                            Entre
-                            R$ 798 e R$ 1.104
-                        </li>
-                        <li>
-                            Entre
-                            R$ 19.157 e R$ 26.511
-                        </li>
-                    </ul>
-                    <ul class="perfilB">
-                        <li>
-                            Perfil de F-H
-                            *Limite: R$ 30.000 em até 24 Parcelas
-                        </li>
-                        <li>
-                            Entre
-                            5.5% e 8.2%
-                        </li>
-                        <li>
-                            Entre
-                            R$ 1.160 e R$ 1.486
-                        </li>
-                        <li>
-                            Entre
-                            R$ 27.858 e R$ 35.676
-                        </li>
-                    </ul>
 
-                    <button type="button">
-                        Solicitar Empréstimo
-                    </button>
+                    <table>
+                        <div id="logo">
+                            <img src="/img/logo.png" alt="logo upFour">
+                        </div>
+
+                        <thead>
+                            <tr>
+                                <td>
+                                    Perfil de A-E
+                                </td>
+
+                                <td>
+                                    Perfil de F-H
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    *Limite: R$ 50.000,00 em até 36 Parcelas
+                                </td>
+
+                                <td>
+                                    *Limite: R$ 30.000 em até 24 Parcelas
+                                </td>
+                            </tr>
+                        </thead>
+
+                        <tfoot>
+                            <td id="ultimaLinha">
+                                <div id="btnEmprestimo">
+                                    <button type="button">
+                                        Solicitar Empréstimo
+                                    </button>
+                                </div>
+                            </td>
+                        </tfoot>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Entre
+                                </td>
+
+                                <td>
+                                    Entre
+                                </td>
+                            <tr>
+                                <td>
+                                    2% e 5%
+                                </td>
+                                <td>
+                                    5.5% e 8.2%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Entre
+                                </td>
+
+                                <td>
+                                    Entre
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    R$ 798 e R$ 1.104
+                                </td>
+                                <td>
+                                    R$ 1.160 e R$ 1.486
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    Entre
+                                </td>
+
+                                <td>
+                                    Entre
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    R$ 19.157 e R$ 26.511
+                                </td>
+                                <td>
+                                    R$ 27.858 e R$ 35.676
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
                 <ul id="cheque">
                     <li>
-                        cheque especial
+                        <h2>
+                            Cheque especial
+                        </h2>
                     </li>
                     <li>
                         12,1%
@@ -172,7 +242,9 @@
 
                 <ul id="cartao">
                     <li>
-                        Cartão de crédito
+                        <h2>
+                            Cartão de crédito
+                        </h2>
                     </li>
                     <li>
                         15,1%
@@ -188,93 +260,116 @@
 
             <div id="avisos">
                 <p>
+                    <i class="fas fa-exclamation-circle"></i>
                     <small>
-                        O resultado é uma simulação baseada na taxa média da GERU e taxa média prevista pelo Banco
+                        O resultado é uma simulação baseada na taxa média da upFour e taxa média prevista pelo Banco
                         Central do Brasil. A contratação do empréstimo está sujeita à análise de crédito.
                     </small>
                 </p>
-
-                <p>
-                    Conheça nossa política de avaliação de crédito.
-                </p>
             </div>
 
-            <section>
-                <h2>Depoimentos</h2>
+            <section id="depoimentos">
+                <div class="tituloDepoimentos">
+                    <h2>Depoimentos</h2>
 
-                <div id="gridDepo">
+                    <div id="depoBox">
 
-                    <div class="depoCard">
-                        <div class="depoTop">
-                            <img src="" alt="">
-                            <p>
-                                há 22 horas
-                            </p>
+                        <div class="depoCard">
+                            <div class="depoTop">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>
+                                    há 22 horas
+                                </p>
+                            </div>
+
+                            <div class="depoText">
+                                <h3>ótimo atendimento</h3>
+                                <p>ótimo atendimento</p>
+                                <p>Gilmar S C</p>
+                            </div>
                         </div>
-                        <div class="depoText">
-                            <h3>ótimo atendimento</h3>
-                            <p>ótimo atendimento</p>
-                            <p>Gilmar S C</p>
+
+                        <div class="depoCard">
+                            <div class="depoTop">
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>
+                                    há 22 horas
+                                </p>
+                            </div>
+                            <div class="depoText">
+                                <h3>ótimo atendimento</h3>
+                                <p>ótimo atendimento</p>
+                                <p>Gilmar S C</p>
+                            </div>
                         </div>
+
+                        <div class="depoCard">
+                            <div class="depoTop">
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>
+                                    há 22 horas
+                                </p>
+                            </div>
+                            <div class="depoText">
+                                <h3>ótimo atendimento</h3>
+                                <p>ótimo atendimento</p>
+                                <p>Gilmar S C</p>
+                            </div>
+                        </div>
+
+                        <div class="depoCard">
+                            <div class="depoTop">
+                                
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>
+                                    há 22 horas
+                                </p>
+                            </div>
+                            <div class="depoText">
+                                <h3>ótimo atendimento</h3>
+                                <p>ótimo atendimento</p>
+                                <p>Gilmar S C</p>
+                            </div>
+                        </div>
+
+                        <div class="depoCard">
+                            <div class="depoTop">
+                                
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>
+                                    há 22 horas
+                                </p>
+                            </div>
+                            <div class="depoText">
+                                <h3>ótimo atendimento</h3>
+                                <p>ótimo atendimento</p>
+                                <p>Gilmar S C</p>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <div class="depoCard">
-                        <div class="depoTop">
-                            <img src="" alt="">
-                            <p>
-                                há 22 horas
-                            </p>
-                        </div>
-                        <div class="depoText">
-                            <h3>ótimo atendimento</h3>
-                            <p>ótimo atendimento</p>
-                            <p>Gilmar S C</p>
-                        </div>
-                    </div>
-
-                    <div class="depoCard">
-                        <div class="depoTop">
-                            <img src="" alt="">
-                            <p>
-                                há 22 horas
-                            </p>
-                        </div>
-                        <div class="depoText">
-                            <h3>ótimo atendimento</h3>
-                            <p>ótimo atendimento</p>
-                            <p>Gilmar S C</p>
-                        </div>
-                    </div>
-
-                    <div class="depoCard">
-                        <div class="depoTop">
-                            <img src="" alt="">
-                            <p>
-                                há 22 horas
-                            </p>
-                        </div>
-                        <div class="depoText">
-                            <h3>ótimo atendimento</h3>
-                            <p>ótimo atendimento</p>
-                            <p>Gilmar S C</p>
-                        </div>
-                    </div>
-
-                    <div class="depoCard">
-                        <div class="depoTop">
-                            <img src="" alt="">
-                            <p>
-                                há 22 horas
-                            </p>
-                        </div>
-                        <div class="depoText">
-                            <h3>ótimo atendimento</h3>
-                            <p>ótimo atendimento</p>
-                            <p>Gilmar S C</p>
-                        </div>
-                    </div>
-
-                </div>
             </section>
         </main>
 

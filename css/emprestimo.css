@@ -1,0 +1,364 @@
+#tituloPrincipal {
+    width: 100%;
+    height: 190px;
+    line-height: 120px;
+
+    background-color: #d2c2b0;
+
+    color: #FFFFFF;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+
+    position: relative;
+}
+
+#valores {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 50px;
+}
+
+#valores #opcoes {
+    width: 90%;
+}
+
+#opcoes form {
+    width: 100%;
+    height: 200px;
+    line-height: 56px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#opcoes form .grupoValores {
+    width: 100%;
+    height: 100%;
+}
+
+#opcoes .grupoValores label {
+    font-size: .8em;
+}
+
+#opcoes .grupoValores p {
+    font-weight: bold;
+    color: #1F1F24;
+    font-size: 1.7em;
+
+}
+
+#opcoes form .grupoValores input[type=range] {
+    width: 100%;
+}
+
+#opcoes form .grupoValores:nth-child(3) {
+    width: 90%;
+    height: 100%;
+    
+    display: flex;
+    gap: 3.65em;
+    flex-direction: column;
+}
+
+#opcoes form .grupoValores:nth-child(3) select {
+    border: none;
+    border-bottom: 1px solid #1F1F24;
+    outline: none;
+
+    color: #1F1F24;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+#taxas {
+    width: 70%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#taxas #pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+
+    margin-top: 1em;
+
+    text-align: right;
+    margin-top: 5em;
+}
+
+#taxas #pagamento li:nth-child(3) {
+    width: 99%;
+}
+
+#taxas #perfis {
+    width: 50%;
+    height: 130%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3;
+    position: relative;
+    top: 2em;
+
+    background-color: #1F1F24;
+    border: 1px solid #d2c2b0;
+    border-radius: 10px;
+}
+
+/* tabela central */
+
+
+#taxas #perfis #logo {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+
+}
+
+#taxas #perfis #logo img {
+    width: 80px;
+    height: 60px;
+    
+    object-fit: cover;
+}
+
+#perfis table {
+    width: 95%;
+    height: 75%;
+
+    color: #fff;
+}
+
+table tr {
+    height: 50px;
+}
+
+#perfis table thead {
+    text-align: center;
+
+}
+
+#perfis table thead tr{
+    height: 20px;
+}
+
+#perfis table tfoot #ultimaLinha {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#perfis table thead tr:nth-child(1) {
+    font-size: .9em;
+    font-weight: bold;
+    color: #d2c2b0;
+}
+
+#perfis table thead tr:nth-child(2) {
+    font-size: .7em;
+}
+
+#perfis table tbody {
+    text-align: center;
+    font-size: 1em;
+}
+
+#perfis table tbody tr:nth-child(even) {
+    font-size: .9em;
+    font-weight: bold;
+    color: #d2c2b0;
+
+}
+
+#perfis #btnEmprestimo {
+    position: relative;
+    text-align: center;
+
+    margin-bottom: 1em;
+}
+
+#perfis #btnEmprestimo button {
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 1em;
+
+    background-color: #d2c2b0;
+
+    color: #1F1F24;
+    font-size: 1em;
+    font-weight: bold;
+
+    border-radius: 10px;
+    border: 1px solid #d2c2b0;
+    outline: none;
+    margin-bottom: 1em;
+
+    cursor: pointer;
+
+}
+#perfis #btnEmprestimo button:hover {
+    background-color: #1F1F24;
+    color: #d2c2b0;
+}
+
+/* tabela cheque */
+
+#taxas #cheque {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-align: center;
+
+    gap: 3em;
+}
+
+#taxas #cartao {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-align: center;
+
+    gap: 3em;
+}
+
+#cheque li:nth-child(1) h2 {
+        font-size: .8em;
+        text-transform: uppercase;
+}
+
+#cartao li:nth-child(1) h2 {
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+/* aviso */
+
+main #avisos {
+    margin-top: 8em;
+    width: 80%;
+    
+    
+    text-align: center;
+    color: #fff;
+}
+
+main #depoimentos {
+    margin: 4em 0;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+}
+
+main #depoimentos h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+    margin-top: 1em;
+}
+
+main #depoimentos #depoBox {
+    width: 100%;
+
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+
+    margin-top: 2em;
+}
+
+#depoimentos #depoBox .depoCard {
+    background-color: #d2c2b0;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#depoimentos #depoBox .depoCard .depoTop {
+    font-size: 1em;
+    color: #daa520;
+}
+
+#depoimentos #depoBox .depoCard .depoTop p {
+    font-size: .8em;
+    color: #000;
+    font-weight: 200;
+}
+
+#depoimentos #depoBox .depoCard .depoText h3 {
+    font-size: .9em;
+}
+
+#depoimentos #depoBox .depoCard .depoText p {
+    font-size: .9em;
+}
+
+footer {
+    width: 100vw;
+    height: 100px;
+
+    background-color: #1F1F24;
+    border-top: 1px solid #d2c2b0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 10px;
+
+}
+
+footer h2 {
+    color: #fff;
+}
+
+footer #icones {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    width: 200px;
+}
+
+footer #icones a {
+    color: #d2c2b0;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
