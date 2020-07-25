@@ -218,6 +218,8 @@ table tr {
     outline: none;
     margin-bottom: 1em;
 
+    cursor: pointer;
+
 }
 #perfis #btnEmprestimo button:hover {
     background-color: #1F1F24;
