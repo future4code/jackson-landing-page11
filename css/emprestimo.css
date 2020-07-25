@@ -323,38 +323,6 @@ main #depoimentos #depoBox {
     font-size: .9em;
 }
 
-footer {
-    width: 100vw;
-    height: 100px;
-
-    background-color: #1F1F24;
-    border-top: 1px solid #d2c2b0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding-top: 10px;
-
-}
-
-footer h2 {
-    color: #fff;
-}
-
-footer #icones {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 10px;
-
-    width: 200px;
-}
-
-footer #icones a {
-    color: #d2c2b0;
-    font-size: 1.5em;
-}
 
 
 
