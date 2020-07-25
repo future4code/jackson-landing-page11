@@ -22,7 +22,7 @@
     justify-content: center;
 
     position: relative;
-    bottom: 60px;
+    bottom: 50px;
 }
 
 #valores #opcoes {
@@ -97,10 +97,11 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 3em;
-}
 
-#taxas #pagamento {
+    margin-top: 1em;
+
     text-align: right;
+    margin-top: 5em;
 }
 
 #taxas #pagamento li:nth-child(3) {
@@ -109,27 +110,150 @@
 
 #taxas #perfis {
     width: 50%;
-    height: 110%;
+    height: 130%;
 
     display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     z-index: 3;
     position: relative;
+    top: 2em;
 
     background-color: #1F1F24;
     border: 1px solid #d2c2b0;
     border-radius: 10px;
 }
 
+/* tabela central */
+
+
 #taxas #perfis #logo {
     display: flex;
+    justify-content: center;
+    
+    width: 100%;
+
 }
 
 #taxas #perfis #logo img {
-    width: 140px;
-    height: 120px;
+    width: 80px;
+    height: 60px;
     
     object-fit: cover;
+}
+
+#perfis table {
+    width: 95%;
+    height: 75%;
+
+    color: #fff;
+}
+
+table tr {
+    height: 50px;
+}
+
+#perfis table thead {
+    text-align: center;
+
+}
+
+#perfis table thead tr{
+    height: 20px;
+}
+
+#perfis table tfoot #ultimaLinha {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#perfis table thead tr:nth-child(1) {
+    font-size: .9em;
+    font-weight: bold;
+    color: #d2c2b0;
+}
+
+#perfis table thead tr:nth-child(2) {
+    font-size: .7em;
+}
+
+#perfis table tbody {
+    text-align: center;
+    font-size: 1em;
+}
+
+#perfis table tbody tr:nth-child(even) {
+    font-size: .9em;
+    font-weight: bold;
+    color: #d2c2b0;
+
+}
+
+#perfis #btnEmprestimo {
+    position: relative;
+    text-align: center;
+
+    margin-bottom: 1em;
+}
+
+#perfis #btnEmprestimo button {
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 1em;
+
+    background-color: #d2c2b0;
+
+    color: #1F1F24;
+    font-size: 1em;
+    font-weight: bold;
+
+    border-radius: 10px;
+    border: 1px solid #d2c2b0;
+    outline: none;
+    margin-bottom: 1em;
+
+}
+#perfis #btnEmprestimo button:hover {
+    background-color: #1F1F24;
+    color: #d2c2b0;
+}
+
+/* tabela cheque */
+
+#taxas #cheque {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-align: center;
+
+    gap: 3em;
+}
+
+#taxas #cartao {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-align: center;
+
+    gap: 3em;
+}
+
+#cheque li:nth-child(1) h2 {
+        font-size: .8em;
+        text-transform: uppercase;
+}
+
+#cartao li:nth-child(1) h2 {
+    font-size: .8em;
+    text-transform: uppercase;
 }
