@@ -112,7 +112,8 @@
     height: 110%;
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2em;
 
     z-index: 3;
     position: relative;
@@ -120,4 +121,15 @@
     background-color: #1F1F24;
     border: 1px solid #d2c2b0;
     border-radius: 10px;
+}
+
+#taxas #perfis #logo {
+    display: flex;
+}
+
+#taxas #perfis #logo img {
+    width: 140px;
+    height: 120px;
+    
+    object-fit: cover;
 }
