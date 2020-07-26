@@ -1,0 +1,176 @@
+/* main responsive */
+@media screen and (min-device-width : 400px) and (max-device-width : 1024px) {
+    header {        
+        display: flex;
+        flex-direction: column;
+
+        padding-bottom: 5em;
+        height: 400px;
+    }
+
+    header #logo {
+        width: 100px;
+        height: 80px;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        align-items: center;
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #menu ul li {
+        padding: 1em 0;
+    }
+
+    header button {
+        margin-top: 2em;
+    }
+}
+
+
+    /* EMPRESTIMOS RESPONSIVE */
+    @media screen and (min-device-width : 801px) and (max-device-width : 1024px) {
+        #emprestimosPage main #tituloPrincipal {
+            font-size: 1.2em;
+            width: 100%;
+        }
+
+        
+        #emprestimosPage #valores {
+            width: 90%;
+            font-size: .8em;
+        }
+
+        #opcoes form .grupoValores input[type=range] {
+            width: 80%;
+        }
+
+        #opcoes form .grupoValores:nth-child(3) {
+            gap: 55px;
+        }
+
+        #emprestimosPage #taxas {
+            width: 90%;
+            margin-bottom: 2em;
+        }
+
+        #emprestimosPage #depoimentos {
+            width: 100%;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        #emprestimosPage #depoimentos #depoBox {
+            width: 100%;
+        }
+
+        #depoimentos #depoBox .depoCard {
+            padding: .7em;
+            font-size: .9em;
+        }
+}
+
+    @media screen and (min-device-width : 786px) and (max-device-width : 800px) {
+
+    #emprestimosPage main #tituloPrincipal {
+        font-size: .9em;
+        text-align: center;
+    }
+
+    #taxas {
+        display: none;
+    }
+
+    #emprestimosPage #depoimentos #depoBox {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-device-width : 491px) and (max-device-width : 786px) {
+    
+    #emprestimosPage #valores {
+        width: 80%;
+        font-size: .7em;
+    }
+
+    #opcoes form .grupoValores:nth-child(3) {
+        gap: 64px;
+    }
+
+    #opcoes form .grupoValores input[type=range] {
+        width: 70%;
+    }
+
+    #emprestimosPage main #tituloPrincipal {
+        font-size: .8em;
+        text-align: center;
+    }
+    
+    #taxas {
+        display: none;
+    }
+
+    #emprestimosPage #depoimentos #depoBox {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-device-width : 321px) and (max-device-width : 490px) {
+    #opcoes {
+        width: 100%;
+        height: 500px;
+
+        display: flex;
+    }
+
+    #opcoes form {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        justify-content: space-evenly;
+
+        padding: 2em;
+    }
+
+    #opcoes form .grupoValores {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+     #taxas {
+        display: none;
+    }
+
+    #emprestimosPage #depoimentos #depoBox {
+        flex-wrap: wrap;
+    }
+
+    #emprestimosPage #depoimentos {
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+}
+
+
+
