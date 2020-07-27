@@ -1,0 +1,194 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
+   }
+   
+#logo img{
+   width: 150px;
+   }
+  
+h1{
+   width: 459px;
+   font-size: 48px;
+   flex-wrap: wrap;
+   color: white;
+   padding: 20px;
+   margin-top: 100px;
+   margin-bottom: 94px;
+}
+
+p{
+   color: white;
+   text-align: center;
+   font-size: 26px;
+}
+
+#button{
+   display: flex;
+   width: 515px;
+   flex-wrap: wrap;
+}
+#img2 img{
+   width: 33em;
+   margin-top: 62px;
+   padding: 67px;
+   border-radius: 7em;
+}
+#principal{
+   display: flex;
+   justify-content: space-around;
+}
+
+#button button, #simulacao {
+   margin: 17px;
+   width: 136px;
+   padding: 15px;
+   color: black;
+   background-color: #d2c2b0;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+.container button{
+   width: 115px;
+   background-color: teal;
+   border: none;
+   color: white;
+   padding: 10px;
+   cursor: pointer;
+}
+
+#simulacao{
+   margin-top: 79px;
+   width: 100%;
+   background-color: white;
+   font-size: 21px;
+}
+
+@media (max-width:375px){
+    *{
+        width: 100%;
+        max-width: 100%;
+    }
+   header {
+       width: 100%;
+       height: 100%!important;
+       border-bottom: 2px solid #d2c2b0;
+       background-color: #1F1F24;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       flex-direction: column;
+       display: block;
+   }
+   
+   footer {
+       width: 100%;
+       height: 100%;
+       background-color: #1F1F24;
+       border-top: 1px solid #d2c2b0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: 10px;
+       text-align: center;
+   }
+   .container{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       width: 90%;
+       align-self: center;
+      }
+      
+  
+  h1{
+      width: 100%;
+      font-size: 46px;
+      flex-wrap: wrap;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  
+  p{
+      color: white;
+      text-align: center;
+      font-size: 30px;
+  }
+  
+  #button{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+  }
+  #img2 img{
+      width: 25em;
+      margin-top: 0px;
+      padding: 67px;
+      border-radius: 7em;
+  }
+  #principal{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+  }
+  
+  #button button, #simulacao {
+      margin: 17px;
+      width: 24%;
+      padding: 15px;
+      color: black;
+      background-color: #d2c2b0;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+  
+  .container button{
+      width: 100%;
+      background-color: teal;
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  #simulacao{
+      margin-top: 55px;
+      width: 90%;
+      background-color: white;
+      font-size: 21px;
+  }
+  
+  #menu ul li a {
+   font-size: 1.2em;
+   color: #d2c2b0;
+   font-weight: bold;
+}
+  #menu ul{
+      width: 100%!important;
+      display: block!important;
+  }
+  header button {
+      width: 100px!important;
+        margin: 15px;
+        font-size: 22px;
+        padding: 10px;
+        height: 100%!important;
+    }
+  #menu li {
+      
+      display: block;
+      text-align: center;
+      padding: 5px;
+      font-size: 22px;
+  }
+  #logo{
+      width: 80%!important;
+  }
+}
